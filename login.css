@@ -27,6 +27,12 @@
     font-weight: 300;
     font-family: "Roboto", sans-serif;
   }
+
+  body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
   
   button {
     padding: 10px 15px;
@@ -202,6 +208,7 @@
   }
 
   footer {
+    margin-top: auto;
     background-color: var(--base);
   }
   .link_lists h3 {

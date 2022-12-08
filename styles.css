@@ -27,6 +27,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 button {
   padding: 10px 15px;
   border: none;
@@ -233,6 +239,7 @@ figure:hover{
 /* Footer Section */
 
 footer {
+  margin-top: auto;
   background-color: var(--base);
 }
 .link_lists h3 {
