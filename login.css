@@ -22,7 +22,7 @@
   
   html,
   body {
-    background-image: url("baground.png");
+    background-image: url("./src/imgs/baground.png");
     line-height: 1.4;
     font-weight: 300;
     font-family: "Roboto", sans-serif;
