@@ -45,13 +45,14 @@ names = ["That's What I Like","24K Magic","What's Up Danger","Blinding Lights","
 num = []
 ap = document.querySelectorAll(".detail")
 for (let index1 = 0; index1 < ap.length; index1++) {
+    newNames = [...names].sort(() => Math.random() > 0.5 ? 1 : -1).slice(0,names.length)
     for (let index = 0; index < names.length; index++) {
         fig = document.createElement("figure")
         imgso = document.createElement("img")
-        imgso.setAttribute("src","src/covers/"+names[index]+".jpg")
+        imgso.setAttribute("src","src/covers/"+newNames[index]+".jpg")
         imgso.setAttribute("alt","Song")
         figcap = document.createElement("figcaption")
-        figcap.append(`${names[index]}`)
+        figcap.append(`${newNames[index]}`)
         fig.append(imgso,figcap)
         ap[index1].append(fig)
     }
