@@ -5,6 +5,9 @@ aud = document.querySelector(".aud")
 search = document.querySelector(".search_input")
 body = document.querySelector(".bodyd")
 left = document.querySelector(".hero-left")
+img = document.querySelector(".hero-right img")
+img_name = document.querySelector(".cont h1")
+grad = document.querySelector(".grad")
 
 // let ls = ["Gansta's Paradise","Starboy","No Idea x Tell Em","Moonlight","Blinding Lights"]
 
@@ -45,22 +48,28 @@ names = ["That's What I Like","24K Magic","What's Up Danger","Blinding Lights","
 num = []
 ap = document.querySelectorAll(".detail")
 for (let index1 = 0; index1 < ap.length; index1++) {
+    newNames = [...names].sort(() => Math.random() > 0.5 ? 1 : -1).slice(0,names.length)
     for (let index = 0; index < names.length; index++) {
         fig = document.createElement("figure")
         imgso = document.createElement("img")
-        imgso.setAttribute("src","src/covers/"+names[index]+".jpg")
+        imgso.setAttribute("src","src/covers/"+newNames[index]+".jpg")
         imgso.setAttribute("alt","Song")
+        fig.setAttribute("class","figs")
         figcap = document.createElement("figcaption")
-        figcap.append(`${names[index]}`)
+        figcap.append(`${newNames[index]}`)
         fig.append(imgso,figcap)
         ap[index1].append(fig)
     }
 }
 
+figs = document.querySelectorAll(".figs")
 
-search.addEventListener("click", function(){
-    if(search === document.activeElement){
-        body.style.display = "none"
-        left.style.display = "none"
-    }
-})
+for(var i = 0;i < figs.length;i++){
+    figs[i].firstChild.addEventListener("click", function(e){
+        a = e.target.nextSibling.innerText
+        img.removeAttribute("src")
+        img.setAttribute("src","src/covers/"+a+".jpg")
+        img_name.innerText = a
+        grad.style.backgroundImage = "url(\"./src/covers/"+a+".jpg\")"
+    })
+}
