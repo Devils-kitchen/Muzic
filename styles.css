@@ -148,10 +148,18 @@ nav input{
 .hero {
   height: 440px;
   padding-bottom: 60px;
-  margin: 20px;
+  /* margin: 20px; */
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
   align-items: center;
+  background-image: linear-gradient(to right,rgba(18, 18, 18,1) 40%,rgba(18, 18, 18,.5) 90%,rgba(0,0,0,0));
+}
+
+.grad{
+  background-image: url(./src/covers/Starboy.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right;
 }
 
 .detail{
@@ -258,10 +266,10 @@ ul li a{
   align-items: center;
 }
 
-.cont hgroup{
-  /* width: 100px; */
+/* .cont hgroup{
+  width: 100px;
   margin-right: 30vw;
-}
+} */
 
 .cont hgroup h1{
   font-size: 70px;

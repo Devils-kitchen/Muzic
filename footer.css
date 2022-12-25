@@ -1,3 +1,12 @@
+:root{
+  font-size: 15px;
+  --base:#000000;
+  --base_dark: #1e1e1e;
+  --contrast:#ffffff;
+  --main:#5EB786;
+  --dominant:#29A3B1;
+  --suttle:#A8CF45;
+}
 footer {
   margin-top: auto;
   background-color: var(--base);
@@ -41,4 +50,17 @@ footer {
 }
 .footer_logo img{
   width: 100px;
+}
+
+.copy{
+    margin: 10px 0px;
+}
+
+.copy ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.copy a{
+    color: grey;
 }
