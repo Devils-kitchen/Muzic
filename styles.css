@@ -152,7 +152,7 @@ nav input{
   display: flex;
   justify-content:flex-start;
   align-items: center;
-  background-image: linear-gradient(to right,rgba(18, 18, 18,1) 40%,rgba(18, 18, 18,.5) 90%,rgba(0,0,0,0));
+  background-image: linear-gradient(to right,rgba(18, 18, 18,1) 50%,rgba(18, 18, 18,.5) 80%,rgba(0,0,0,0));
 }
 
 .grad{
