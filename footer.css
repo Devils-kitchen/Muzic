@@ -19,7 +19,7 @@ footer {
   list-style: none;
 }
 .link_lists ul li {
-    color: white;
+  color: white;
   font-size: 16px;
   margin-bottom: 5px;
 }
@@ -53,13 +53,15 @@ footer {
 }
 
 .copy{
-    margin: 10px 0px;
+    padding: 10px 0px;
 }
 
 .copy ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .copy a{
     color: grey;
